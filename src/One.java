@@ -6,16 +6,16 @@ public class One {
      * Due dato of the task: 17.04.2023
      */
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         System.out.print("Введите количество чисел: ");
-        int n = scanner.nextInt();
+        int n = sc.nextInt();
         int[] numbers = new int[n];
         // Ввод чисел
         for (int i = 0; i < n; i++) {
             System.out.print("Введите число #" + (i + 1) + ": ");
-            numbers[i] = scanner.nextInt();
+            numbers[i] = sc.nextInt();
         }
-        scanner.close();
+        sc.close();
         int shortestNumber = numbers[0];
         int longestNumber = numbers[0];
         // Поиск самого короткого и самого длинного числа
